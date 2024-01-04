@@ -1,8 +1,8 @@
 :root {
     font-size: 10px;
 
-    --color-primary: hsl(231, 10%, 14%);
-    --color-secondary: hsl(358, 32%, 70%);
+    --color-primary: hsl(235, 35%, 19%);
+    --color-secondary: hsl(358, 78%, 69%);
     --color-font: hsla(0, 0%, 100%, 0.902);
 
     --color-shadow: hsl(235, 36%, 35%);
@@ -123,16 +123,39 @@ section {
     margin-inline: 1rem;
 }
 
-.controls {
-    margin-top: 3rem;
-}
-
-.controls button {
-    border: none;
-    background-color: transparent;
+.time-btn-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+  }
+  #time {
+    text-align: center;
+    color: #ffffff;
+    font-size: 5em;
+    font-weight: 600;
+  }
+  .btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+  }
+  #btn-start,
+  #btn-pause {
+    padding: 1em 2em;
+    border-radius: 0.5em;
     cursor: pointer;
-}
-
-.controls #reset {
+    background-color: #ffffff;
+  }
+  #btn-reset {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    font-size: 2em;
+  }
+  .hide {
     display: none;
-}
+  }
+  .show {
+    display: block;
+  }

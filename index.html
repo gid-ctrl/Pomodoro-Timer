@@ -29,9 +29,9 @@
         <h1>Pomodoro Timer</h1>
 
         <div class="panel">
-          <p id="work">Work</p>
-          <p id="break">Break</p>
-          <p id="long-break">Long Break</p>
+          <p id="focus">Work</p>
+          <p id="shortbreak">Break</p>
+          <p id="longbreak">Long Break</p>
         </div>
 
         <div class="timer">
@@ -44,15 +44,15 @@
           </div>
         </div>
 
-        <div class="controls">
-          <button id="start" onclick="start()">
-            <i class="fa-solid fa-play"></i>
-          </button>
-          <button>ff</button>
-
-          <a id="reset" href="./"
-            ><i class="fa-solid fa-arrow-rotate-left"></i
-          ></a>
+        <div class="time-btn-container">
+          <span id="time"></span>
+          <div class="btn-container">
+            <button id="btn-start" class="show">Start</button>
+            <button id="btn-pause" class="hide">Pause</button>
+            <button id="btn-reset" class="hide">
+              <i class="fa-solid fa-rotate-right"></i>
+            </button>
+          </div>
         </div>
       </div>
     </section>
